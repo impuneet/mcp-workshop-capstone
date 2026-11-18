@@ -1,0 +1,27 @@
+{
+  "name": "@workshop/server",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lesson app: a NestJS MCP server exposing tools, resources and prompts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "ts-node src/main.ts",
+    "start:dev": "node --watch -r ts-node/register src/main.ts",
+    "start:stdio": "ts-node src/stdio.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@nestjs/common": "^12.4.2",
+    "@nestjs/core": "^12.4.2",
+    "@nestjs/platform-express": "^12.4.2",
+    "express": "^5.2.1",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@nestjs/cli": "^12.0.12",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2"
+  }
+}

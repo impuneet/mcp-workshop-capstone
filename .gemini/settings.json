@@ -1,0 +1,23 @@
+{
+  "mcpServers": {
+    "workshop-notes": {
+      "httpUrl": "http://localhost:3000/mcp",
+      "timeout": 30000
+    },
+    "workshop-gateway": {
+      "httpUrl": "http://localhost:3100/mcp",
+      "timeout": 30000
+    },
+    "files": {
+      "command": "node",
+      "args": [
+        "node_modules/@modelcontextprotocol/server-filesystem/dist/index.js",
+        "./sandbox"
+      ],
+      "trust": true
+    }
+  },
+  "mcp": {
+    "allowed": ["workshop-notes", "workshop-gateway", "files"]
+  }
+}

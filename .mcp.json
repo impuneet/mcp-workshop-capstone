@@ -1,0 +1,22 @@
+{
+  "mcpServers": {
+    "workshop-notes": {
+      "type": "stdio",
+      "command": "node",
+      "args": [
+        "node_modules/ts-node/dist/bin.js",
+        "-P",
+        "apps/server/tsconfig.json",
+        "apps/server/src/stdio.ts"
+      ]
+    },
+    "workshop-notes-http": {
+      "type": "http",
+      "url": "http://localhost:3200/mcp"
+    },
+    "workshop-gateway": {
+      "type": "http",
+      "url": "http://localhost:3100/mcp"
+    }
+  }
+}

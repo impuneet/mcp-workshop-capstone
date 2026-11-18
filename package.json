@@ -1,0 +1,27 @@
+{
+  "name": "workshop-mcp-tools",
+  "version": "1.0.0",
+  "private": true,
+  "description": "3-hour hands-on workshop: build MCP servers in NestJS, consume third-party MCP servers, and run a multi-agent gateway",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "server:http": "npm run start -w @workshop/server",
+    "server:stdio": "npm run start:stdio -w @workshop/server",
+    "gateway": "npm run start -w @workshop/gateway",
+    "inspect": "tsx scripts/inspect-mcp.ts",
+    "smoke": "tsx scripts/smoke.ts",
+    "slides": "python scripts/build_slides.py && python scripts/add_notes.py",
+    "notebook": "python scripts/build_notebook.py"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

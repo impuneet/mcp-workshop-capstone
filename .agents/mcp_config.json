@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "workshop-notes": {
+      "command": "node",
+      "args": [
+        "node_modules/ts-node/dist/bin.js",
+        "-P",
+        "apps/server/tsconfig.json",
+        "apps/server/src/stdio.ts"
+      ],
+      "cwd": "C:/Users/PuSharma/Downloads/workshop-mcp-tools",
+      "timeoutSeconds": 180
+    },
+    "workshop-notes-http": {
+      "serverUrl": "http://localhost:3200/mcp"
+    }
+  }
+}

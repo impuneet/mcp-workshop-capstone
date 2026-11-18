@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+*.tsbuildinfo
+
+# Slides and related generation scripts
+slides/
+scripts/build_slides.py
+scripts/add_notes.py
+scripts/build_notebook.py
+scripts/check_layout.py
+
+# Logs and environment
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db
